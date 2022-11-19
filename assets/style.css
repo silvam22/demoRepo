@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*HEADER STYLES */
+
+#header {
+  padding: 15px;
+  background-color: darkgoldenrod;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  opacity: 0.88;
+}
+
+#header h2 {
+  cursor: default;
+}
+
+#links {
+  margin-right: 20px;
+}
+#links ul li {
+  display: inline-block;
+}
+
+#links ul li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 0px solid white;
+  transition: border 150ms, padding 150ms;
+}
+
+#links ul li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+}
+/* Landing Styles */
+#landing {
+  background: -o-linear-gradient(rgba(169, 90, 90, 0.5)), url("./img/pexels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 100px 20px;
+}
+
+.profcard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 70%;
+  padding: 50px 15px;
+  background-color: coral;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px black;
+
+}
+.profCard img {
+  height: 250px; 
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgb(rgb(81, 48, 48), rgb(73, 92, 73), rgb(5, 5, 29))
+
+}
+
+
+.profile-image {
+height: 200px;
+border-radius: 5px;
+box-shadow: 2px 2px 8px rgb(rgb(255, 187, 0), green, blue)
+
+}
+
+.info {
+  width: 60%;
+  padding: 10px;
+}
+
+.info p {
+  padding: 10px 0;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: space evenly;
+  padding: 10px;
+}
+
+.socialLinks a {
+  color: rgb(rgb(182, 60, 60), rgb(70, 111, 70), rgb(56, 56, 100));
+  transition: color 200ms;
+}
+
+.socialLinks a:hover {
+  color:rgb(255, 115, 0);
+}
+
+.socialLinks a:active {
+  color:aliceblue;
+}
+
+/* Projects Styles */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+.projects h1 {
+  margin-bottom: 50px;
+  border-bottom: 2px solid black;
+  color:rgb(70, 111, 70)
+}
+.proj {
+  display: flex;
+  margin: auto;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  background-color: rgb(255, 187, 0)
+}
+.projInfo {
+  padding: 20px;
+}
+.projInfo h2 {
+  border-bottom: 4px double rgb(73, 92, 73);
+  margin-bottom: 15px;
+}
+.proj img{
+  width: 40%;
+  align-self: flex-start;
+}
+
+/* Contacts Styles */
+
+#contact {
+  display: flex;
+  justify-content: space evenly;
+  padding: 50px;
+  background-color: rgba(19, 5, 29, 0.284);
+}
+#contact h1 {
+  margin-bottom: 50px;
+  color: rgb(100, 56, 90)
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form input, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  outline: none;
+}
+button {
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 14pt;
+  cursor: pointer;
+  background-color: rgb(255, 187, 0);
+  border: none;
+  outline: none;
+}
+
+button:active {
+  box-shadow: none;
+  background-color: rgb(182, 60, 60);
+  color: rgb(100, 56, 90);
+}
+
+/* Footer Styles */
+
+footer {
+  padding: 10px;
+  background-color: gray;
+}
+footer p {
+width: fit content;
+
+
+}
+
+
+
+
+@media only screen and (min-width: 480px) {
+  #header h2, #links {
+    margin: auto;
+  }
+  #links ul li a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 12px;
+  }
+.profCard {
+  width: 90%;
+  padding: 20px;
+}
+.info {
+  width: 100%;
+}
+.info h2 {
+  display: none;
+}
+.profCard img {
+height: 200px;
+}
+.projects {
+  padding: 20px;
+}
+.proj {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.proj2 {
+  width: 100%;
+  flex-wrap: wrap-reverse;
+}
+.proj img {
+  margin: auto;
+  width: 100%;
+}
+
+
+}
